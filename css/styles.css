@@ -1,0 +1,136 @@
+/*colores*/
+:root {
+  --main-white: #F4F1DE;
+  --main-red: #E07A5F;
+  --main-blue: #3D405B;
+  --main-gray: #81B29A;
+}
+
+/*barra de navegación*/
+* {
+    box-sizing: border-box;
+  }
+
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D0826F;
+    /*position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: inherit;*/
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: #E0FBFC;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+  }
+  
+li a:hover {
+    background-color: #3B4358;
+  }
+
+  /* Main content */
+.main {
+  margin-top: 70px; /* Add a top margin to avoid content overlay */
+}
+  
+  /*Media query agrega break point en 800px: */
+  @media screen and (max-width: 800px) {
+    .ul {
+      width: 100%; /*El width es 100%, cuando el viewport es 800px o menos*/
+    }
+  }
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/*links*/
+.mail a:link {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mail a:visited {
+  color: #3D5A80;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mail a:hover {
+  color: #D0826F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mail a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#nombre {
+  color:#E0FBFC;
+  text-shadow: 1px  0px 0px #3B4358,
+               0px  1px 0px #3B4358,
+               -1px  0px 0px #3B4358,
+               0px -1px 0px #3B4358;
+}
+
+/*íconos*/
+.icons {
+  color:#3D5A80;
+}
+
+/*Barras idiomas*/
+#barraa {
+  height:24px;
+  width:100%;
+  background-color: #3D5A80;
+}
+
+#barrab {
+  height:24px;
+  width:90%;
+  background-color: #3D5A80;
+}
+
+#barrac {
+  height:24px;
+  width:25%;
+  background-color: #3D5A80;
+}
+
+/*fechas*/
+.exp {
+  color:#3D5A80;
+}
+
+/*footer*/
+.footer {
+  background-color: #D0826F;
+  color:#E0FBFC;
+  font-size: large;
+}
