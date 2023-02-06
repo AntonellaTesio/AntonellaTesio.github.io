@@ -1,22 +1,48 @@
 /*colores*/
 :root {
-  --main-white: #F4F1DE;
-  --main-red: #E07A5F;
-  --main-blue: #3D405B;
-  --main-gray: #81B29A;
+  --main-light: #E7E7DE;
+  --main-brown: #0F3057;
+  --main-blue: rgb(0, 88, 122);
+  --main-gray: #008891;
+  --dark-gray: #757575;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
 }
 
 /*barra de navegación*/
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #00587a #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #00587a;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
   }
 
 .navbar{
   overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
   z-index: 1;
 }
  
@@ -25,34 +51,29 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #D0826F;
-    /*position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: inherit;*/
+    background-color: var(--main-blue);
   }
   
-li {
+.navbar li {
     float: left;
   }
   
-li a {
+.navbar li a {
     display: block;
-    color: #E0FBFC;
+    color: var(--main-light);
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
     font-size: medium;
   }
   
-li a:hover {
-    background-color: #3B4358;
+.navbar li a:hover {
+    background-color: var(--main-gray);
   }
 
-  /* Main content */
+  /* Contenido principal */
 .main {
-  margin-top: 70px; /* Add a top margin to avoid content overlay */
+  margin-top: 70px; 
 }
   
   /*Media query agrega break point en 800px: */
@@ -62,75 +83,95 @@ li a:hover {
     }
   }
 
-html {
-  font-family: "Roboto", sans-serif;
-}
+.cartas {
+    background-color: white;
+    color: var(--dark-gray);
+  }
 
 /*links*/
 .mail a:link {
-  color: grey;
+  color: var(--dark-gray);
   background-color: transparent;
   text-decoration: none;
 }
 
-.mail a:visited {
-  color: #3D5A80;
+.links a:visited {
+  color: var(--main-brown);
   background-color: transparent;
   text-decoration: none;
 }
 
-.mail a:hover {
-  color: #D0826F;
+.links a:hover {
+  color: var(--main-gray);
   background-color: transparent;
   text-decoration: none;
 }
 
-.mail a:active {
-  color: yellow;
+.links a:active {
+  color: var(--main-gray);
   background-color: transparent;
   text-decoration: none;
 }
 
+/*sombra nombre*/
 #nombre {
-  color:#E0FBFC;
-  text-shadow: 1px  0px 0px #3B4358,
-               0px  1px 0px #3B4358,
-               -1px  0px 0px #3B4358,
-               0px -1px 0px #3B4358;
+  color:var(--main-light);
+  text-shadow: 1px  0px 0px var(--main-blue),
+               0px  1px 0px var(--main-blue),
+               -1px  0px 0px var(--main-blue),
+               0px -1px 0px var(--main-blue);
 }
 
 /*íconos*/
-.icons {
-  color:#3D5A80;
+.icon-s {
+  color: var(--main-blue);
+  font-size: large;
+ 
+}
+
+.icon-b {
+  color: var(--main-blue);
+  font-size: xx-large;
 }
 
 /*Barras idiomas*/
 #barraa {
   height:24px;
   width:100%;
-  background-color: #3D5A80;
+  background-color: var(--main-blue);
 }
 
 #barrab {
   height:24px;
   width:90%;
-  background-color: #3D5A80;
+  background-color: var(--main-blue);
 }
 
 #barrac {
   height:24px;
   width:25%;
-  background-color: #3D5A80;
+  background-color: var(--main-blue);
 }
 
 /*fechas*/
 .exp {
-  color:#3D5A80;
+  color:var(--main-blue);
 }
 
 /*footer*/
-.footer {
-  background-color: #D0826F;
-  color:#E0FBFC;
+footer {
+  background-color: var(--main-blue);
+  color:var(--main-light);
   font-size: large;
+  margin-top: 16px;
+}
+
+footer a:link {
+  color: var(--main-light);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+script{
+  float: right;
 }
