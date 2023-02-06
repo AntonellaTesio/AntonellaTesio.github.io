@@ -2,13 +2,14 @@
 :root {
   --main-light: #E7E7DE;
   --main-brown: #0F3057;
-  --main-blue: rgb(0, 88, 122);
+  --main-blue: #00587a;
   --main-gray: #008891;
   --dark-gray: #757575;
 }
 
 html {
   font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
 }
 
 /*barra de navegación*/
@@ -20,7 +21,7 @@ html {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #00587a #ffffff;
+    scrollbar-color: var(--main-blue);
   }
 
   /* Chrome, Edge, and Safari */
@@ -29,13 +30,13 @@ html {
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #f5f5f5;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #00587a;
+    background-color: var(--main-blue);
     border-radius: 15px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--main-gray);
   }
 
 .navbar{
